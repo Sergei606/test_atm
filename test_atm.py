@@ -24,10 +24,10 @@ class TestAtm(unittest.TestCase):
     def test_incorrect_balance(self):
         self.assertNotEqual(99999, self.atm.check_balance())
 
-    def test_incorrect_password(self):
+    def test_incorrect_pin(self):
         self.assertNotEqual(111, self.pin)
 
     def test_get_money(self):
         self.assertEqual(5000, self.atm.get_money(5000))
 
-   
+    
